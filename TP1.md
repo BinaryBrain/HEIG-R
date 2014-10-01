@@ -4,8 +4,10 @@ Thursday, September 25, 2014
 
 
 
-Exercice 1
-----------
+Résultats et réponses aux exercices
+-----------------------------------
+
+### Exercice 1
 
 
 ```r
@@ -14,15 +16,10 @@ examens<-read.table("Data/TP1/examen.txt", header = TRUE)
 algae<-read.table("Data/TP1/algae.txt", header  = TRUE)
 ```
 
-Exercice 2
-----------
+### Exercice 2
 
+#### a) Construction des représentations
 
-
-
-```r
-stem(cpus)
-```
 
 ```
 ## 
@@ -40,15 +37,46 @@ stem(cpus)
 ##   9 | 2
 ```
 
-```r
-par(mfrow = c(1, 2), pty = "s") # 2 graph cÃ´te-Ã -cÃ´te
-hist(cpus, xlab = "performance relative", ylab = "frÃ©quence", main = "", col = gray(0.5))
-boxplot(cpus, xlab = "performance relative", col = gray(0.5), horizontal = TRUE)
-rug(cpus)
+![plot of chunk ex2a](./TP1_files/figure-html/ex2a.png) 
+
+#### c) Médiane, moyenne et modes
+
+
+```
+## [1] 42
 ```
 
-![plot of chunk exercice2](./TP1_files/figure-html/exercice2.png) 
+```
+## [1] 86.88
+```
 
-```r
-#par(mfrow = c(1, 1)) # TODO ask the teacher why
+```
+## [1] 24 36 66
+```
+
+#### d) Résumé
+
+La commande `summary(..)` permet d'afficher un résumé contenant, le minimum, les quartiles, le maximum et la médiane.
+
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##     7.0    24.0    42.0    86.9    73.5   915.0
+```
+
+#### e) Écart-type
+
+1. La moyenne va légèrement diminuer mais la médiane va très peu bouger.
+2. La moyenne et la médiane vont se déplace de 10 unités.
+3. Rien ne bouge.
+
+#### f) Écart-type
+
+
+```
+## [1] 148.4
+```
+
+```
+## [1] 42.85
 ```

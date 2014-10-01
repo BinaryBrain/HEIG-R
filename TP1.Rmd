@@ -9,20 +9,44 @@ output:
 
 ```{r setup, echo=FALSE}
 library(knitr)
-opts_chunk$set(cache=FALSE)
+opts_chunk$set(echo=FALSE, cache=FALSE)
 read_chunk('TP1.R')
 ```
 
-Exercice 1
-----------
+Résultats et réponses aux exercices
+-----------------------------------
 
-```{r exercice1}
+### Exercice 1
+
+```{r ex1, echo=TRUE}
 ```
 
-Exercice 2
-----------
+### Exercice 2
 
+#### a) Construction des représentations
 
+```{r ex2a}
+```
 
-```{r exercice2}
+#### c) Médiane, moyenne et modes
+
+```{r ex2c}
+```
+
+#### d) Résumé
+
+La commande `summary(..)` permet d'afficher un résumé contenant, le minimum, les quartiles, le maximum et la médiane.
+
+```{r ex2d}
+```
+
+#### e) Écart-type
+
+1. La moyenne va légèrement diminuer mais la médiane va très peu bouger.
+2. La moyenne et la médiane vont se déplace de 10 unités.
+3. Rien ne bouge.
+
+#### f) Écart-type
+
+```{r ex2f}
 ```
